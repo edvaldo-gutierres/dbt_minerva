@@ -1,0 +1,67 @@
+models:
+  - name: dim_secao
+    description: Tabela de dimensão usada para armazenar e categorizar informações detalhadas sobre departamentos.
+    columns:
+      - name: sk_dim_secao
+        description: "{{ doc('sk') }}. Referente a informação de departamentos"
+        tests:
+          - unique
+          - not_null
+      - name: cod_secao
+        description: Identificador do código do departamento do sistema de origem
+        tests: 
+          - not_null
+      - name: desc_secao
+        description: Descrição do departamento do sistema de origem
+        tests: 
+          - not_null
+
+  - name: dim_unidade
+    description: Tabela de dimensão usada para armazenar e categorizar informações detalhadas sobre unidades.
+    columns:
+      - name: sk_dim_unidade
+        description: "{{ doc('sk') }}. Referente a informação de unidades"
+        tests:
+          - unique
+          - not_null
+      - name: cod_unidade
+        description: Identificador do código da unidade do sistema de origem
+        tests: 
+          - not_null
+      - name: nome_unidade
+        description: Descrição da unidade do sistema de origem
+        tests: 
+          - not_null
+
+
+  - name: fato_10a_hora
+    description: Tabela usada para armazenar informações quantitativas relacionadas à excesso de jornada (10a Hora)
+    columns:
+    - name: sk_dim_unidade
+      description: "{{ doc('sk') }}. Referente a informação de unidades"
+      tests: 
+        - not_null
+    - name: sk_dim_secao
+      description: "{{ doc('sk') }}. Referente a informação de unidades"
+      tests: 
+        - not_null
+    - name: matricula_funcionario
+      description: Matricula do colaborador
+    - name: data
+      description: Data da ocorrência de 10a hora.
+      tests: 
+        - not_null
+    - name: h_base
+      description: Jornada de trabalho.
+      tests: 
+        - not_null
+    - name: h_extra
+      description: Hora extra realizada.
+      tests: 
+        - not_null
+
+    
+
+
+    
+      
