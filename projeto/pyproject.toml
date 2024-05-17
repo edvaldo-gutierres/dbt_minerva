@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "projeto"
+version = "0.1.0"
+description = ""
+authors = ["edvaldo-gutierres <edvaldo_gutierres@yahoo.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dbt-core = "1.7.3"
+dbt-sqlserver = "1.7.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

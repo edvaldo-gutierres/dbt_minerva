@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sqlserver
+    database: dw_hml
+    schema: dw_datamart_rh
+    tables:
+      - name: tab_rh_br_funcionario_SAP_backup_19092023
