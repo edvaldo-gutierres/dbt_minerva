@@ -23,7 +23,7 @@ O objetivo principal do dbt é facilitar o desenvolvimento, a documentação e a
 
 - **Integração com controle de versão**: Como o dbt trata as transformações como código, ele pode ser facilmente integrado a sistemas de controle de versão como Git, facilitando o gerenciamento de mudanças e colaboração em equipe.
 
---
+---
 ### Neste exemplo utilizaremos o conector:
 * sqlserver
 
