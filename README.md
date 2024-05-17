@@ -2,8 +2,7 @@
 
  Documentação: https://docs.getdbt.com/
 
-![DBT](assets/image.png)
-
+![DBT](projeto/assets/image.png)
 ---
 
 ## O que é dbt?
